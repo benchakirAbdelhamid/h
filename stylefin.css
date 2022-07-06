@@ -1,0 +1,122 @@
+body{
+    margin: 0; 
+    padding: 0;
+ }
+ *{
+     box-sizing: border-box;
+ }
+ 
+:root{
+    --primary-color:#000000;
+    --secondary-color: #000a53;
+    --danger-color:rgb(255, 0, 0);
+}
+
+header{
+    padding:1rem;
+    display:flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+
+.search{
+    background-color: rgba(169, 139, 223, 0.471);
+    border: 2px solid var(--primary-color);
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color:rgb(255, 255, 255);
+    font-family: inherit;
+}
+
+.search:focus{
+    outline:0;
+    background-color: var(--primary-color);
+}
+
+.search::placeholder{
+    color: #7378c5;
+}
+ main{
+     background-image: linear-gradient( to  right, rgb(0, 0, 5),rgba(205, 200, 252, 0.884) ,rgb(0, 0, 125));
+     display: flex;
+     flex-wrap: wrap;
+     padding-bottom: 250px;
+ }
+ img{
+     border-radius: 15px;
+     width:250px;
+     height: 370px;
+     object-fit: cover;
+     position: absolute;
+     top: -82px;
+     left:63px;
+     transition:all 0.5s;
+ }
+ section:hover img{
+     top: -150px;
+     border-radius: 50%;
+     transform: rotate(360deg);
+     box-shadow: 0 0 20px 2px rgb(2, 2, 2);
+ }
+ nav{
+    margin: 0 auto;
+ }
+ section{
+    /* border: 2px solid red; */
+     border-radius: 15px;
+     background-color: rgb(255, 254, 254);
+     width: 370px;
+     height: 290px;
+     margin: 200px auto 0 auto;
+     position: relative;
+     transition: all 0.5s;
+     box-shadow: 0 0 20px 2px rgb(2, 2, 2);
+ }
+ section:hover{
+     height: 380px;
+     box-shadow: 0px 0px 150px 10px blue inset;
+ }
+ section:hover div{
+     opacity: 1;
+ }
+ div{
+    /* border: 1px solid red; */
+     position: absolute;
+     bottom: 0;
+     text-align: center;
+     padding: 10px;
+     opacity: 0;
+     transition: 0.5s;
+ } 
+
+
+ .title{
+    position: absolute;
+    bottom: -22px;
+    left: 20px;
+    padding: 2px 5px;
+    background-color: rgb(1, 1, 134);
+    color: aliceblue;
+ }
+
+ .len{
+    position: absolute;
+    bottom: -22px;
+    right: 20px;
+    padding: 2px 5px;
+    background-color: rgb(1, 1, 134);
+    color: aliceblue;
+
+ }
+ .date{
+    position: absolute;
+    bottom: -22px;
+    left: 143px;
+    padding: 2px 5px;
+    background-color: rgb(1, 1, 134);
+    color: aliceblue;
+ }
+ .title_film{
+    letter-spacing: 2px;
+ }
